@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&family=Inter:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header{
+    background-color: #2e073f;
+    height: 80px;
+    width: 100%;
+    padding: 5px 15px 5px 100px;
+    margin: 0;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo-link{
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 5px ;
+}
+
+#menu{
+    display: none;
+}
+
+.header__icon-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.header__logo-link:hover{
+    transform: scale(1.6);
+}
+
+.navbar__nav-list{
+    list-style: none;
+}
+
+.nav-list__item{
+    float: left;
+    position: relative;
+    padding: 0 20px;
+}
+
+.nav-list__item:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.item__link{
+    font-size: 20px;
+    color: white;
+}
+
+.item__link:hover{
+    color: #F0EDCF;
+}
+
+/*Termina header*/
+
+.section{
+    color: black;
+}
+
+.inicio{
+    background: url(img/imageInicio.png) top / cover fixed;
+    color: white;
+    height: 1000px;
+}
+
+.inicio__background{ /*Oscureser fondo de inicio*/
+    height: 100%;
+    width: 100%;
+    background-color: #0005;
+}
+.inicio__title{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-left: 75px;
+}
+
+.inicio__descrition{
+    width: 720px;
+    height: auto;
+    font-size: 35px;
+    text-align: justify;
+    padding-top: 80px;
+    margin: 80px auto auto 75px;
+}
+
+/*Servicios*/
+
+.services{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.services__title{
+    font-size: 38px;
+    padding-top: 75px;
+    padding-left: 75px;
+}
+
+.services__container{
+    width: 85%;
+    height: 515px;
+    padding-top: 35px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.services__flex-container{
+    display: flex;
+    width: 50%;
+}
+
+.services__container p{
+    padding: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+}
+
+.services__img-left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services__img-right-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.services__img{
+    width: 55px;
+    height: auto;
+    margin-top: 42px;
+}
+
+.purple-background-section{
+    background-color: white;
+    width: 100%;
+    height: 1650px;
+}
+
+
+/*otra section*/
+
+.keep-width{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 1800px;
+}
+
+.purple-background-triangle{
+    background-color: #3e003f; /* Color morado */
+    clip-path: polygon(0 0, 0% 0, 100% 100%, 0 100%);
+    height: 1200px; /* Ajusta según el tamaño que necesites */
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.about-Us{
+    height: 800px;
+    width: 100%;
+    top: 25px;
+    display: flex;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+}
+
+.about-Us__img-container{
+    width: 40%;
+    height: 750px;
+}   
+
+.about-Us__img{
+    width: 90%;   
+    height: auto;
+    margin-left: 65px;
+    padding-top: 85px;
+}
+
+.about-Us__content{
+    padding: 85px;
+    width: 60%; 
+    height: 750px;
+    padding-left: 120px;
+}
+
+.about-Us__tittle{
+    margin-left: 180px;
+    font-size: 45px;
+}
+
+.about-Us__divider{
+    background-color: white;
+    height: 25px;
+    width: 100%;
+    background-color: #2e073f;
+    margin-top: 20px;
+}
+
+.about-Us__description{
+    width: 100%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+/*team section*/
+
+.team{ 
+    height: 1100px;
+    width: 100%;
+    top: 700px;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+}
+
+.team__content{
+    padding-top: 50px;
+    color: white;
+}
+
+.team__mjk-tittle{
+    font-size: 60px;
+    margin: 0;
+    padding-left: 130px;
+}
+
+.team__tittle{
+    font-size: 38px;
+    text-align: center;
+    margin: 0;
+}
+
+.team__container-cards{
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__card{
+    background-color: #ebd3f8;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin: 35px;
+    width: 400px;
+    height: 750px;
+    text-align: center;
+}   
+
+.team__img-card{
+    height: 200px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.purple-background-rectangle {/*Sombreado debajo de las cards like gradient*/
+    background-color: #3e003f;
+    background: linear-gradient(#3e003f,transparent); /* Color morado */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 300px; /* Ajusta según el tamaño que necesites */
+    width: 100%;
+    top: 1199px;
+    position: absolute;
+    z-index: 2;
+}
+
+/*section contact*/
+
+.contact{
+    margin-bottom: 40px;
+    height: auto;
+}
+
+.contact__content{
+    background-color: white;
+    padding: 15px 5px 35px 65px;
+}
+
+.contact__tittle{
+    font-size: 38px;
+}
+
+.form{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contact__container{   
+    background-color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__img-container{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__img{
+    width: 62%;
+}
+
+.contact__form{
+    width: 55%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact__subtittle{
+    font-size: 38px;
+    padding-bottom: 30px;
+}
+
+.form__input{
+    padding: 10px 20px;
+}
+
+input, textarea, select{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 25px #0004;
+}
+
+textarea{
+    min-width: 80%;
+    resize: none;
+}
+
+.button-enviar{
+    padding: auto;
+    margin: 10px 0px 5px 60%;
+    width: 160px;
+    height: 45px;
+    text-align: center;
+    background-color: #3e003f;
+    color: white;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #2e073f;
+    text-align: center;
+    color: white;
+}
+
+.footer__links{
+    height: 200px;
+    padding: 5px 10%;       
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.links{
+    width: 550px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.que-hacemos{
+    align-items: center;
+}
+
+.footer__list{
+    list-style: none;
+    width: 200px;
+    align-items: start;
+    display: inline-block;
+}
+
+.footer__list li{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.footer__subtitles{
+    color: white;
+    font-size: 25px;    
+    margin: 10px;
+}
+
+.footer__img{
+    width: 40px;
+    height: auto;
+    text-align: center;
+    margin: 15px;
+}
+
+.footer p{
+    padding-bottom: 20px;
+}
+
+.footer__divider {
+    height: 1px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior */
+    width: 40%; /* Se ajusta al ancho del contenedor */
+}
+
+
+
+
+@media (max-width:1500px){
+
+    /*Services*/
+
+    .services__img-right-column{
+        margin-left: 0;
+    }   
+
+    .services__container{
+        margin: auto;
+        align-items: center;
+        height: 950px;
+        flex-wrap: nowrap;
+    }
+
+    .services__flex-container{
+        width: 77%;
+        align-items: center;
+    }
+    
+    /*About-Us*/
+
+    .purple-background-section{
+        height: 1400px;
+    }
+
+    .purple-background-triangle{
+        height: 1100px; 
+    }
+
+    .about-Us__tittle{
+        margin-left: 15px;
+        font-size: 45px;
+    }
+
+    .about-Us__divider{
+        height: 18px;
+        margin-top: 20px;
+    }
+
+    .about-Us__description{
+        font-size: 25px;
+    }
+
+    /*Team*/
+
+    .team{ 
+        height:800px;
+        width: 100%;
+        top: 700px;
+        position: absolute;
+        z-index: 3;
+        margin: 0;
+    }
+    
+    .team__container-cards{
+        height: 550px;
+        padding-top: 100px;
+    }
+
+    .team__card{
+        margin: 30px;   
+        width: 380px;
+        height: 590px;
+        text-align: center;
+    } 
+
+    .team__img-card{
+        height: 145px;
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .purple-background-rectangle {
+        height: 150px;
+        top: 1098px;
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .inicio{
+        height: 800px;
+    }
+
+    .inicio__background{
+        height: 800px;
+    }
+
+    .inicio__title{
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .inicio__descrition{
+        font-size: 28px;
+        width: 470px;
+    }
+
+    .keep-width{
+        height: 1550px;
+    }
+
+    .header{
+        height: auto;
+        padding: 5px 20px 5px 70px;
+    }
+
+    .header__logo-link{
+        font-size: 35px;
+        padding: 0;
+    }
+
+    .header__icon-menu{
+        display: initial;
+        width: 55px;
+    }
+
+    .header .header__navbar{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #3e003f;
+        display: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+
+    .header .nav-list__item{
+        width: 100%;
+        padding: 10px;
+        display: inline;
+    }
+
+    #menu:checked ~ .header__navbar{
+        display: initial;
+    }
+
+    .inicio__title{
+        padding: 45px 12px 0 40px;
+    }
+
+    .services__container{
+        height: 680px;
+    }
+    .services__container p{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .services__img{
+        width: 40px;
+        margin-top: 25px;
+    }
+
+    .about-Us__tittle{
+        font-size: 30px;
+    }
+
+    .about-Us__description{
+        font-size: 20px;
+    }
+
+    .about-Us__content{
+        padding: 85px 30px 30px 50px;
+    }
+
+    .team__card{
+        margin: 15px;
+    }
+
+    .contact__form{
+        width: 80%;
+    }
+
+    .button-enviar{
+        margin: auto;
+        display: inline-block;
+    }
+
+    .contact__img-container{
+        display: none;
+    }
+
+    .contact__container{
+        width: 100%;
+    }
+
+    .social-media{
+        margin-left: 10px;
+    }
+
+    .footer__img{
+        margin: 5px;
+        width: 34px;
+    }
+
+    .footer__subtitles{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .header{
+        padding: 5px 20px;
+    }
+
+    .inicio__title{
+        font-size: 25px;
+        padding: 50px 10px 0 20px;
+    }
+
+    .inicio__descrition{
+        font-size: 15px;
+        padding: 10px 5px;
+        margin-left: 20px;
+        width: 280px;
+    }
+
+    .inicio{
+        height: 500px;
+    }
+
+    .services__title{
+        font-size: 23px;
+        padding: 25px 0 15px 20px;
+    }
+
+    .services__container {
+        width: 100%;
+        height: 580px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .services__flex-container{
+        width: 70%;
+
+    }
+
+    .services__container p{
+        font-size: 15px;
+        padding: 13px 0;
+        width: 100%;
+    }
+
+    .services__text-left-column{
+        width: 80%;
+    }
+
+    .services__img{
+        margin: 10px 3px;
+        width: 30px;
+    }
+
+    .keep-width{
+        height: 1900px;
+    }
+
+    .purple-background-triangle{
+        display: none; /* Ajusta según el tamaño que necesites */
+    }
+
+    .purple-background-rectangle {/*Sombreado debajo de las cards like gradient*/
+        top: 0;
+        height: 700px; /* Ajusta según el tamaño que necesites */
+        z-index: 1;
+        background: linear-gradient(#3e003f,); /* Color morado */
+    }     
+
+    .about-Us{
+        display: block;
+    }
+
+    .about-Us__img-container {
+        width: 100%;
+        height: 350px;
+    }
+
+    .about-Us__description {
+        font-size: 15px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-Us__content {
+        padding: 10px;
+        width: 100%;
+        height: 250px;
+        align-items: center;
+    }
+
+    .about-Us__img{
+        padding: 0;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+
+    .about-Us__tittle{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+
+    .about-Us__divider{
+        width: 80%;
+        margin: auto;
+    }
+
+    .team__mjk-tittle{
+        font-size: 45px;
+        font-weight: 700;
+        color: #3e003f;
+        padding-left: 45px;
+        padding-bottom: 20px;
+    }
+
+    .team__tittle{
+        font-size: 35px;
+        color: #3e003f;
+    }
+
+    .team__img-card {
+        height: 100px;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .team__container-cards{
+        display: block;
+        padding-top: 30px;
+        height: auto;
+    }
+
+    .team__card{
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .contact__content {
+        background-color: white;
+        padding: 15px 20px 35px 20px;
+    }
+
+    .contact__tittle {
+        font-size: 25px;
+    }
+
+    .contact__description{
+        font-size: 15px;
+    }
+    .contact__subtittle{
+        font-size: 25px;
+    }
+
+    .contact__form{
+        width: 100%;
+    }
+
+    .form{
+        margin: auto;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .contact__subtittle{
+
+    }
+
+    .footer__links{
+        padding: 0;
+    }
+
+    .tell-us{
+        display: none;
+    }
+    
+}

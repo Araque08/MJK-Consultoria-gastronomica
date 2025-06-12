@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria MJK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js" async></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <a class="header__logo-link" href="#">MJK</a>
+            <input type="checkbox" class="" id="menu">
+            <label for="menu" class="menu">
+                <img src="img/sidebar.png" class="header__icon-menu" alt="">
+            </label>
+            <nav class="header__navbar">
+                <ul class="navbar__nav-list">                
+                    <li class="nav-list__item">
+                        <a class="item__link" href="#services">Nuestro Servicios</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="item__link" href="#about">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="item__link" href="#team">Nuestro Equipo</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="item__link" href="#contactanos">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section inicio">
+        <div class="inicio__background">
+        <h1 class="inicio__title">Impulsamos la rentabilidad de tu restaurante con soluciones personalizadas y efectivas.</h1>
+        <p class="inicio__descrition">En MJK, somos expertos en transformar los desafíos de tu negocio en oportunidades de crecimiento, optimizando costos, diseñando menús estratégicos, y proporcionando asesoramiento personalizado para asegurar el éxito de tu restaurante.</p>
+        </div>
+    </section>
+
+    <main class="section services" id="services">
+        <h2 class="services__title" id="serv">SERVICIOS QUE OFRECEMOS</h2>
+        <div class="services__container">
+            <div class="services__flex-container">
+                <div class="services__img-left-column">
+                    <img class="services__img" src="img/Imgservices/consultoriaPersonalizada.png" alt="">
+                    <img class="services__img" src="img/Imgservices/EstandarizacionCostos.png" alt="">
+                    <img class="services__img" src="img/Imgservices/IngenieriaMenu.png" alt="">
+                    <img class="services__img" src="img/Imgservices/TeoricovsReal.png" alt="">
+                    <img class="services__img" src="img/Imgservices/FormatoInventarios.png" alt="">
+                </div>
+                <div class="services__text-left-column">
+                    <p>Sesiones de consultoria personalizada costos y finanzas</p>
+                    <p>Estandarizacion de costos</p>
+                    <p>Ingenieria de menú</p>
+                    <p>Analisis teorico vs real</p>
+                    <p>Formatos de gestion de inventarios</p>
+                </div>
+            </div>
+            <div class="services__flex-container">
+                <div class="services__img-right-column">
+                    <img class="services__img" src="img/Imgservices/PerdidasGanancias.png" alt="">
+                    <img class="services__img" src="#" alt="">
+                    <img class="services__img" src="img/Imgservices/BasesDatos.png" alt="">
+                    <img class="services__img" src="img/Imgservices/CierreCaja.png" alt="">
+                </div>
+                <div class="services__text-right-column">
+                    <p>Informe de perdidas y ganacias (PYG)</p>
+                    <p>Punto de equilibrio y formulacion de <br>presupuestos</p>
+                    <p>Bases de datos de insumos y proveedores</p>
+                    <p>Formatos diario cierre de caja</p>
+                </div>
+            </div>   
+        </div>
+    </main>
+
+    <div class="keep-width">
+        <div class="purple-background-section">
+            <div class="purple-background-triangle"></div>
+        </div>
+        <section class="section about-Us" id="about">
+            <div class="about-Us__img-container">
+                <img class="about-Us__img" src="img/imageSobreNosotros.png" alt="">
+            </div>
+            <div class="about-Us__content">
+                <h2 class="about-Us__tittle">SOBRE NOSOTROS</h2>
+                <div class="about-Us__divider"></div>
+                <p class="about-Us__description">En Consultores MJK, nos especializamos en consultoria estrategica para el sector gastronomico. Contamos con un equipo de profesionesales apasionados y altamente capacitados, con mas de 6 años de experiencia en la gestion de costos y finanzas. Nos dedicamos a trasnformar la egstion financiera de su negocio con el objetivo de optimizar su rentabilidad y eficiencia</p>
+            </div>      
+        </section>
+
+        <section class="section team" id="team">
+                <div class="team__content">
+                    <h2 class="team__mjk-tittle">MJK</h2>
+                    <h2 class="team__tittle">NUESTRO EQUIPO</h2>
+                </div>
+                <div class="team__container-cards">
+                    <div class="team__card">
+                        <img class="team__img-card" src="img/iconoimagenteam.png" alt="">
+                        <p>Karen Araque Perez</p>
+                        <p></p>
+                    </div>
+                    <div class="team__card">
+                        <img class="team__img-card" src="img/iconoimagenteam.png" alt="">
+                        <p>Jacobo Pino Ayala</p>
+                    </div>
+                    <div class="team__card">
+                        <img class="team__img-card" src="img/iconoimagenteam.png" alt="">
+                        <p>Manuel Toro Lopez</p>
+                    </div>
+                </div>
+        </section>
+        <div class="purple-background-rectangle"></div>
+    </div>
+
+    <section class="section contact" id="contactanos"> 
+        <div class="contact__content">
+            <h2 class="contact__tittle">¿Listo para optimizar tu restaurante?".</h2>
+            <p class="contact__description">"¡Transforma tu restaurante hoy mismo! Completa el formulario y recibe una consulta gratuita para descubrir oportunidades de crecimiento y ahorro en tu negocio. Juntos encontraremos la solución perfecta para ti."</p>
+        </div>
+
+        <div class="contact__container">
+            <div class="contact__img-container">
+                <img class="contact__img" src="img/imageContact.png" alt="">
+            </div>
+            <div class="contact__form">
+                <h2 class="contact__subtittle">Contacto</h2>
+                <form class="form" id="form" action="">
+                    <div class="form__input">
+                        <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    </div> 
+                    <div class="form__input">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div> 
+                    <div class="form__input">
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="Telefono" required>
+                    </div> 
+                    <div class="form__input">
+                        <select name="service" id="service">
+                            <option value="service1">Sesiones de consultoria personalizada costos y finanzas</option>
+                            <option value="service2">Estandarizacion de costos</option>
+                            <option value="service3">Ingenieria de menú</option>
+                            <option value="service4">Analisis teorico vs real</option>
+                            <option value="service5">Formatos de gestion de inventarios</option>
+                            <option value="service6">Informe de perdidas y ganacias (PYG)</option>
+                            <option value="service7">Bases de datos de insumos y proveedores</option>
+                            <option value="service8">Formatos diario cierre de caja</option>
+                        </select>
+                    </div> 
+                    <div class="form__input">
+                        <textarea rows="6" placeholder="Mensaje" name="description" id="description"></textarea>
+                    </div> 
+                    <button class="button-enviar" type="submit1" aria-required="">Enviar</button>
+                </form>
+            </div>   
+        </div>
+    </section>
+
+    <footer class="section footer">
+        <div class="footer__links">
+            <div class="links que-hacemos">
+                <h2 class="footer__subtitles">¿QUE HACEMOS?</h2>
+                <ul class="footer__list">
+                    <li>Estructura de costos</li>
+                    <li>Ingenieria de Menu</li>
+                    <li>Punto de Equilibrio</li>
+                    <li>PYG</li>
+                    <li>Reduccion de Gastos</li>
+                    <li>Asesoramiento Personalizado</li>
+                </ul>
+            </div>
+            <div class="links social-media">
+                <h2 class="footer__subtitles">SIGUENOS EN REDES</h2>
+                <img class="footer__img" src="img/iconofacebook.png" alt="">
+                <img class="footer__img" src="img/iconotwitter.png" alt="">
+                <img class="footer__img" src="img/iconinstagram.png" alt="">
+            </div>
+            <div class="links tell-us">
+                <h2 class="footer__subtitles">¿NOS CUENTAS TU PROYECTO?</h2>
+                <img class="footer__img" src="img/iconwhatsapp.png" alt="">
+                <img class="footer__img" src="img/icongmail.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer__divider"></div>
+        <p>Copyright MJK SeSoftA</p>
+    </footer>
+</body>
+</html>
