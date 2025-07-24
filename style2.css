@@ -13,6 +13,8 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+/*Header*/
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -156,3 +158,72 @@ body{
     z-index: -1;
 }
 
+
+/*Services*/
+
+.services{
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    position: relative;
+}
+
+.services-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-slider{
+    display: flex;
+}
+
+.service{
+    display: flex;
+}
+
+.service-txt{
+    width: 50%;
+    margin-right: 20px;
+    padding-left: 60px;
+    margin: auto 0;
+}
+
+.service-txt h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.service-txt p{
+    font-size: 16px;
+    color: #5E5E5E;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.service-img{
+    width: 50%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.service-img img{
+    width: 60%;
+    border-radius: 20px;
+}
+
+.swiper {
+    width: auto;
+    height: 50vh;
+}
+
+.service span{
+    color: rgb(81, 188, 240);
+}
+
+#service-8 img{
+    padding-top: 20px;
+    width: 40%;
+}
