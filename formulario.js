@@ -1,24 +1,32 @@
-const form = document.getElementById('form')
-form.addEventListener('submit', sendEmail)
+const form = document.getElementById('form');
 
-const serviceId = 'service_4imuoyo'
-const templateId = 'template_iy85eht'
-const apikey = '9JADBuaQ_Za_aIDvr'
+const serviceId = 'service_4imuoyo';
+const templateId = 'template_iy85eht';
+const publicKey = '9JADBuaQ_Za_aIDvr';  // clave pública (NO private key)
 
-function sendEmail(event){
+// Inicializamos EmailJS (fuera del submit)
+emailjs.init(publicKey);
+
+form.addEventListener('submit', sendEmail);
+
+function sendEmail(event) {
     event.preventDefault();
-    emailjs.init(serviceId);
 
-    emailjs.sendForm(serviceId,templateId,form,apikey)
-        .then((result) => Swal.fire("El mensaje se ha enviado con exito"))
+    emailjs.sendForm(serviceId, templateId, form, publicKey)
+        .then(() => {
+        Swal.fire("✅ Mensaje enviado con éxito");
+        form.reset(); // limpiar formulario después de enviar
+        })
         .catch((error) => {
-            Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "No ha sido posible enviar el mensaje",
-            });
+        console.error(error);
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "No ha sido posible enviar el mensaje",
         });
+    });
 }
+
 
 
 
